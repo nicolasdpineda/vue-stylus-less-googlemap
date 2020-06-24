@@ -1,0 +1,197 @@
+@import 'variables'
+.needsclick
+	cursor pointer
+.margin-center
+	margin-left: auto !important
+	margin-right: auto !important
+
+body
+	background: transparent
+
+#app
+	overflow-x: hidden
+p
+	font-size:16px
+	line-height: 26px
+
+.gray-font
+	color: #8B97A2
+
+.dd
+	transition-all-four()
+	box-shadow-dd()
+	margin: 0 0 20px 0
+	max-width: 240px
+	border: none
+	background-color: #fff
+	-webkit-border-radius 4px
+	-moz-border-radius 4px
+	border-radius 4px
+	position: relative
+	font-size: 15px
+	label
+		padding: 0
+		font-weight: 400
+		font-size: font-small
+		color: sfc-gray-dark
+		margin: 0
+		display: block
+		cursor: pointer
+	select
+		-webkit-appearance: none
+		-moz-appearance: none
+		appearance: none
+		-webkit-box-shadow: none !important
+		-moz-box-shadow: none !important
+		box-shadow: none !important
+		background-color: transparent
+		border: 0px solid #fff
+		color: #181818
+		cursor: pointer
+		display: block
+		width: 95%
+		line-height: 1.4
+		padding: 15px
+		position: relative
+		z-index: 41
+		border-radius: 0px
+
+.info-container
+	border: none
+	-webkit-box-shadow: none !important
+	-moz-box-shadow: none !important
+	box-shadow: none !important
+
+.return-to-map
+	margin-bottom: 20px
+
+.state-name
+	clear:both
+
+span.arrow-down
+	width: 0
+	height: 0
+	display: block
+	border-left: 5px solid transparent
+	border-right: 5px solid transparent
+	border-top: 6px solid sfc-gray-dark
+	position: absolute
+	top: 50%
+	right: 15px
+	display: block
+	transition: all 0.5s ease
+	-webkit-transition: all 0.5s ease
+	cursor: pointer
+	&:hover
+		border-top: 7px solid #000
+
+.score-box
+	.cap-rating
+		width: 110px
+		height: 25px
+		background-repeat: no-repeat
+		background-size: contain
+		background-position: left center
+		&.4A
+		&.5A
+		&.3A
+			height: 30px
+		&.NO
+			background-image: url("https://web-resources.savingforcollege.com/images/cap-ratings/rating-caps-NO.svg") !important
+			height: 30px
+		&.NP
+			background-image: url("https://web-resources.savingforcollege.com/images/cap-ratings/rating-caps-NP.svg") !important
+			height: 30px
+
+	.cap-rating
+	.star-img
+		display: block
+		height: 21px
+		width: 90px
+		margin-top: 5px
+		max-width: 100px
+		padding: 0
+		margin: 0
+		img
+			position: relative
+			// top: -3px
+	.star-img
+		height: 12px
+
+.plan-row
+	.state-tax-value
+	.state-name
+		font-size 1.7rem
+		color: #696969
+		font-weight: 500
+
+
+button.btn
+a.btn
+	font-size: 14px
+	padding 10px 25px
+	font-weight: body-font-weight-strong
+	box-shadow()
+	border-radius()
+	border 1px solid sfc-pale-gray
+	background #fff
+	margin 5px 0
+	cursor pointer
+	text-decoration: none!important
+	white-space: nowrap
+	&.small
+		padding 5px 10px
+	&.large
+		padding 15px 35px
+	.v-spinner
+		display: inline-block
+		top: 4px
+		position: relative
+		left: 5px
+	&.sfc-blue
+		background sfc-blue!important
+		border none
+		box-shadow: 0 1px 3px 0 rgba(0,0,0,0.15)
+		color #fff!important
+		text-transform uppercase
+		&.disabled
+			background #444!important
+			color #fff!important
+			border 1px solid #444!important
+			&:hover
+				background #444!important
+				color #fff!important
+				border 1px solid #444!important
+		&.empty
+			background: bg-gray!important
+			color: sfc-blue!important
+			border: 1px solid sfc-pale-gray!important
+			&:hover
+				color: #fff!important
+				background: sfc-blue!important
+				border 1px solid sfc-blue-border!important
+
+		&.plan-details
+			background: #7CA1B8!important
+			border: 1px solid #396884!important
+			color: #fff!important
+		&:hover
+			background sfc-blue-hover!important
+	@media screen and (min-width: 605px) and (max-width: 783px)
+		padding: 10px 15px
+		font-size: 14px
+.bordered-blue
+	border 1px solid sfc-blue-border
+	color sfc-blue-border
+	&:hover
+		color #fff
+		background sfc-blue-border
+
+@media screen and (max-width: 605px)
+
+	.hide-mobile
+		display: none;
+	
+	button.btn
+	a.btn
+		padding: 10px 15px

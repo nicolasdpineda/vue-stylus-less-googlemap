@@ -1,0 +1,35 @@
+{
+  "name": "vue_widget",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "start": "rm -rf .cache; parcel index.html",
+    "build": "NODE_ENV=production rm -rf .cache; parcel build --public-url ./ index.html",
+    "deploy-to-staging": "./bin/dont_run_directly/deploy.sh staging staging/enroll_now_529_v2",
+    "deploy-to-development": "./bin/dont_run_directly/deploy.sh development development/enroll_now_529_v2",
+    "deploy-to-production": "./bin/dont_run_directly/deploy.sh production enroll_now_529_v2"
+  },
+  "author": "SFC Team",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/core": "^7.2.2",
+    "@vue/component-compiler-utils": "^2.5.0",
+    "babel-polyfill": "^6.26.0",
+    "babel-preset-env": "^1.7.0",
+    "parcel-bundler": "^1.11.0",
+    "pug": "^2.0.3",
+    "stylus": "^0.54.5",
+    "stylus-loader": "^3.0.2",
+    "vue-template-compiler": "^2.5.22"
+  },
+  "dependencies": {
+    "axios": "^0.18.0",
+    "bootstrap-vue": "^2.0.0-rc.11",
+    "intersection-observer": "^0.7.0",
+    "node": "^13.10.1",
+    "vue": "^2.5.22",
+    "vue-hot-reload-api": "^2.3.1",
+    "vue-observe-visibility": "^0.4.4",
+    "vue-on-click-outside": "^1.0.3"
+  }
+}
