@@ -23,7 +23,7 @@
     "vue-template-compiler": "^2.5.22"
   },
   "dependencies": {
-    "axios": "^0.18.0",
+    "axios": "^0.21.1",
     "bootstrap-vue": "^2.0.0-rc.11",
     "intersection-observer": "^0.7.0",
     "node": "^13.10.1",
